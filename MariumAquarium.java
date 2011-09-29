@@ -20,7 +20,7 @@ public class MariumAquarium extends JComponent implements Runnable
 	private static final String FISH_IMAGES_FOLDER = "images/fish";
 	private static final String WINDOW_TITLE = "Marium Aquarium";
 
-	private static final Dimension AQUARIUM_SIZE = new Dimension(800, 600);
+	private static final Dimension AQUARIUM_SIZE = new Dimension(1000, 800);
 	private static final int DEFAULT_TOTAL_FISH = 25;
 	private static final int SLEEP_TIME = 100;
 	private static final int INSET = 20;
@@ -120,7 +120,7 @@ public class MariumAquarium extends JComponent implements Runnable
 
 	public void paint(Graphics canvas) 
 	{
-		canvas.drawImage(backgroundImage, 0, 0, this);
+		canvas.drawImage(backgroundImage, 0, 0, 800, 600, this);
 
 		for(Fish f : fish)
 		{
